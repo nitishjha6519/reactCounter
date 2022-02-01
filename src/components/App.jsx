@@ -5,8 +5,12 @@ function App(){
 const [count, setCount] = useState(0);
 
 function handleClick(){
+  const presentTime= new Date().toLocaleString();
+  setCount(presentTime);
+  setInterval(handleClick,1000);
+
   
-  setCount(count+1);
+  
 }
 
     return (
